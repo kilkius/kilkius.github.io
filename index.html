@@ -1,12 +1,170 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my website.</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Web development, web design, portfolio">
+        <meta name="keywords" content="coding, programming, web dev, ignas, kilkius">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="style/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+        <title>Ignas Kilkius | Home</title>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="navbar d-flex navbar-expand-md">
+          <div class="container">
+            <!--hamburger toggle-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_menu">
+              <span><i class="bi bi-three-dots"></i></span>
+            </button>
+            <a href="index.html" class="navbar-brand text-light">Ignas <span class="text-warning">Kilkius</span></a>
+
+
+            
+
+            <!--menu-->
+            <div class="collapse navbar-collapse" id="nav_menu">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link current" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--Dark mode toggle-->
+            <div id="dark_mode">
+              <button id="moon" class="btn btn-warning mx-1"><i class="bi bi-moon-fill"></i></button>
+              <button id="sun" class="btn btn-warning mx-1"><i class="bi bi-brightness-high-fill"></i></button>
+            </div>
+          </div>
+        </nav>
+
+        <section id="home" class="text-center text-md-start p-5">
+          <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+              <div class="content">
+                <h3 id="showcase_name_main">Hello there!</h3>
+                <p class="my-3 bio_main">My name is Ignas, I am a full stack web developer with a passion for creating beautiful, responsive and functional websites.</p>
+                <a class="btn btn-warning cv" target="_blank" href="/homepage/IgnasKilkiusCV.pdf">See my CV</a><br>
+                <a class="btn btn-warning" target="_blank" href="https://www.linkedin.com/in/ignas-kilkius-630366131"><i class="bi bi-linkedin"></i></a>
+                <a class="btn btn-warning" target="_blank" href="https://github.com/kilkius"><i class="bi bi-github"></i></a>
+                <a class="btn btn-warning" target="_blank" href="https://wa.me/0034928148032"><i class="bi bi-whatsapp"></i></a>
+                <a class="btn btn-warning" target="_blank" href="mailto:ignaskilkius@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+
+
+              </div>
+              <img src="images/showcase.jpeg" alt="profile pic" class="profile">
+
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div class="project_heading"><h1>My Projects</h1></div>
+          <div class="d-flex flex-column flex-lg-row container align-items-center justify-content-center">
+          
+          <div class="card m-3" style="width: 18rem; height: 30rem;">
+            <img src="images/shoppr.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shoppr</h5>
+              <p class="card-text">This dynamic shopping list webapp is built with Python, Flask. This webapp contains a SQLite3 database where user and product data is stored.</p>
+              <a class="btn btn-warning" target="_blank" href="http://ignaskilkius.pythonanywhere.com/logout">Visit it</a>
+              <a class="btn btn-warning" target="_blank" href="https://github.com/kilkius/Shoppr"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+
+          <div class="card m-3" style="width: 18rem; height: 30rem;">
+            <img src="images/sj.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Steven and Jason's</h5>
+              <p class="card-text">A website made for a construction company based in London. It includes 3 pages and is fully responsive. Made only with HTML and CSS.</p>
+              <a class="btn btn-warning" target="_blank" href="projects/Steven and Jason ltd/index.html">View it</a>
+              <a class="btn btn-warning" target="_blank" href="https://github.com/kilkius/Steven-and-Jason-s"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 18rem; height: 30rem;">
+            <img src="images/rt.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Reaction test</h5>
+              <p class="card-text">Reaction test made using JavaScript. Click on the shapes that appear on the screen and try to get the fastest average time.</p>
+              <a class="btn btn-warning" target="_blank" href="projects/JS reaction test/index.html">Try it</a>
+              <a class="btn btn-warning" target="_blank" href="https://github.com/kilkius/Reaction-test"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 18rem; height: 30rem;">
+            <img src="images/snake.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Snake JS</h5>
+              <p class="card-text">Snake game created with vintage styling. This project was made with HTML, CSS and JavaScript</p>
+              <a class="btn btn-warning" target="_blank" href="projects/Snake-JS/index.html">Play it</a>
+              <a class="btn btn-warning" target="_blank" href="https://github.com/kilkius/Snake-JS"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+
+        </div>
+
+        </section>
+
+        <section id="about" class="text-center text-md-start p-5">
+          <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center about_container">
+            <div>
+            <h1 id="showcase_name">About me</h1>
+            <p class="bio">I am a self-taught web developer who is enthusiastic about creating visualy appealing and user friendly websites. 
+              I have knowledge in both, front end languages such as HTML, CSS and JavaScript as well as back end with Python and C. I am also familiar with frameworks such as Bootstrap and Flask.
+              If you need a website built, have a job opportunity or just want to chat about tech, do not hesitate to contact me.
+            </p>
+              <img class="icons" src="images/html5.svg" alt="HTML">
+              <img class="icons" src="images/css3.svg" alt="CSS">
+              <img class="icons" src="images/js.svg" alt="JS">
+              <img class="icons" src="images/bootstrap5.svg" alt="bootstrap">
+              <img class="icons" src="images/python.svg" alt="Python">
+              <img class="icons" src="images/flask.svg" alt="Flask">
+              </div>
+              <img src="images/ignas.png" class="about_pic" alt="profile picture">
+          </div>
+
+        </section>
+
+        <section id="contact" class="contact_form text-center text-md-start container">
+          <h1 id="showcase_name" class="my-3">Say hello<i class="bi bi-pen"></i></h1>
+          
+          <form action="https://formsubmit.co/ignaskilkius@gmail.com" method="POST" id="contact_form">
+            <div class="form-floating mb-3 contact">
+              <input type="text" class="form-control floatingInput" name="name" placeholder="Name">
+              <label for="floatingInput">Name</label>
+            </div>
+
+            <div class="form-floating mb-3 contact">
+              <input type="email" class="form-control floatingInput" name="email" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating contact">
+              <textarea class="form-control" name="Message" placeholder="Message" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Message</label>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://ignaskilkius.com/thanks.html">
+
+            <button type="submit" class="btn btn-warning my-3 contact">Send</button>
+          </form>
+
+        </section>
+
+        <script src="javascript/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
 </html>

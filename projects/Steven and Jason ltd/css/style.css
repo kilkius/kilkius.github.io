@@ -1,0 +1,214 @@
+body{    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    background-color: #eaeaea;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main_banner{
+    padding-bottom: 20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    text-decoration: none;
+    border: none;
+    background: #2dc3ce;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.button_1:hover{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #2dc3ce;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #fff;
+    margin: 10px 0;
+}
+
+/*Header*/
+header{
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header nav{
+    float: right;
+}
+
+header .highlight, header .current a{
+    color: #2dc3ce;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #ccc;
+    transition: 0.5s;
+}
+
+/*Showcase*/
+
+#showcase{
+    min-height: 500px;
+    background: url('../Images/showcase.jpg') no-repeat center center/ cover;
+    text-align: center;
+    color: #fff;
+}
+    
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    }
+
+#showcase p{
+    font-size: 20px;
+}
+
+#ourServices{
+    text-align: center;
+    position: relative;
+    right: 15px;
+    height: 100px;
+}
+
+/*Boxes*/
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 200px;
+    height: 130px;
+}
+
+
+/*Sidebar*/
+aside#sidebar{
+    padding-top: 60px;
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+article#main-col{
+    padding-top: 60px;
+    float: left;
+    width: 65%;
+}
+
+aside img{
+    width: 100%;
+}
+
+.quote input{
+    margin-bottom: 10px;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 20px;
+    background: #e6e6e6;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+footer{
+    padding: 5px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #35424a;
+    text-align: center;
+}
+
+/* Media queries */
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase{
+        padding-top: 170px;
+    } 
+    
+    #showcase h1{
+        margin-top: 40px;
+        font-size: 30px;
+    } 
+
+    .page-title{
+        margin-top: 30px;
+    }
+
+    #ourServices p{
+        margin: 0 20px;
+    }
+    }

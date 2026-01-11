@@ -1,0 +1,38 @@
+h1{
+    font-size: 250%;
+}
+
+body{
+    background-color: #000;
+    color: rgb(41, 165, 7);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container{
+    display: flex; 
+    justify-content: center;
+}
+
+#canvas{
+    border-radius: 2px;
+}
+
+.title{
+    color: #fff;
+}
+
+#result{
+    text-align: center;
+}
+
+.d_pad#right, .d_pad#left{
+    margin:0 25px;
+}
+
+.d_pad{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}

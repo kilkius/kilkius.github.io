@@ -1,0 +1,191 @@
+#showcase_name_main {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 300%;
+    line-height: 4rem;
+}
+
+#showcase_name {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 400%;
+    line-height: 4rem;
+}
+
+section#home, section#projects, section#about, section#contact {
+    min-height: 100vh;
+}
+
+.navbar-toggler-icon {
+    z-index: 1;
+}
+
+.content {
+    background-color: rgb(236, 208, 137);
+    padding: 60px;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    z-index: 1;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    opacity: 0.8;
+    z-index: 2;
+
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.card, img.profile, .content, .icons{
+    border-radius: 5px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.card:hover, .icons:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.058),
+    0 12.5px 10px rgba(0, 0, 0, 0.16),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.096),
+    0 100px 80px rgba(0, 0, 0, 0.22)
+}
+
+img.profile:hover, .content:hover{
+    transform: rotate(1deg);
+    transition: 0.2s ease-in-out;
+}
+
+img.profile {
+    width: 60%;
+    transform: rotate(4deg);
+}
+
+.about_pic{
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+
+.bi{
+    color: #000;
+}
+
+.bi-three-dots {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: #000;
+}
+
+.card-img-top{
+    height: 180px;
+}
+
+.card-text{
+    height: 140px;
+}
+
+.contact{
+    width: 350px;
+    margin-top: 10px;
+
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project_heading {
+    text-align: center;
+    padding: 50px;
+    margin-top: 30px;
+    background-color: plum;
+    transform: skewY(-4deg);
+}
+
+.project_heading h1{
+    font-size: 900%;
+    transform: skewY(4deg);
+    z-index: -1;
+}
+
+.bio {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.about_container {
+    display: flex;
+}
+
+#thanks_section {
+    height: 100vh;
+    
+}
+
+#thanksContainer {
+    background-color: rgb(236, 208, 137);
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 50px;
+    transform: rotate(3deg);
+}
+
+#thanksContainer #thanks {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 400%;
+    margin-bottom: 50px;
+}
+
+.icons {
+    width: 80px;
+    margin: 5px;
+}
+
+.future {
+    filter: blur(3px);
+}
+
+.future-text{
+    height: 110px;
+}
+
+.cv {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 756px){
+    .navbar-brand{margin-left: 60px; font-size: 90%;}
+    .content{position: relative; top: 10px; left: 0px; padding: 10px; font-size: 15px;}
+    .bio{font-size: 15px;}
+    img.profile{position: relative; top: 30px; width: 100%;}
+    .project_heading h1{font-size: 300%;}
+    #thanksContainer {height: 350px; width: 350px;}
+}
